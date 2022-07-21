@@ -270,6 +270,84 @@ section {
     aspect-ratio: 1;
     font-size: 20px;
 }
+
+/* banner pitckdesk */
+#pitckdesk {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.special-button {
+    text-decoration: none;
+    color: white;
+    outline: none;
+    text-align: center;
+    font-size: 3rem;
+    border: none;
+    font-weight: 600;
+    background-image: linear-gradient(
+        90deg,
+        #03a9f4,
+        #f441a5,
+        #ffeb3b,
+        #03a9f4
+    );
+    background-size: 400%;
+    padding: 1rem 5rem;
+    cursor: pointer;
+    border-radius: 5rem;
+    z-index: 1;
+    position: relative;
+}
+.special-button:hover {
+    animation: gradient 8s linear infinite;
+}
+@keyframes gradient {
+    0% {
+        background-position: 0%;
+    }
+    100% {
+        background-position: 400%;
+    }
+}
+.special-button:before {
+    content: "";
+    position: absolute;
+    top: -0.5rem;
+    right: -0.5rem;
+    bottom: -0.5rem;
+    left: -0.5rem;
+    z-index: -1;
+    background-image: linear-gradient(
+        90deg,
+        #03a9f4,
+        #f441a5,
+        #ffeb3b,
+        #03a9f4
+    );
+    background-size: 400%;
+    border-radius: 4rem;
+    opacity: 0;
+    transition: 0.5s;
+}
+.special-button:hover::before {
+    filter: blur(2rem);
+    opacity: 1;
+    animation: gradient 8s linear infinite;
+}
+
+.pitckdesk__subs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.pitckdesk__subs .heading--desc {
+    text-align: center;
+    margin: 2rem 0;
+}
+/* end banner pitckdesk */
+
 .partner-swiper {
     margin-top: 5rem;
 }
@@ -387,7 +465,10 @@ section {
 .decor-galaxy {
     position: absolute;
     z-index: -1;
-    opacity: 0.2;
+    opacity: 0.5;
+    max-width: var(--max-width);
+    left: 50%;
+    transform: translateX(-50%);
 }
 /* footer */
 #footer {
