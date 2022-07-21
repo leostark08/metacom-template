@@ -1,7 +1,19 @@
+// window.onscroll = function () {
+//     scrollFunction();
+// };
+
+function scrollFunction() {
+    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+        document.getElementById('navbar').style.maxHeight = '80px';
+    } else {
+        document.getElementById('navbar').style.maxHeight = '150px';
+    }
+}
+
 const partnerSwiper = new Swiper('.partner-swiper', {
     // Optional parameters
     loop: true,
-    spaceBetween: 30,
+    spaceBetween: 50,
     breakpoints: {
         320: {
             slidesPerView: 2,
@@ -63,12 +75,8 @@ const projectSwiper = new Swiper('.project-swiper', {
     keyboardControl: true,
     // Navigation arrows
     navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-    pagination: {
-        el: '.swiper-pagination',
-        type: 'bullets',
+        nextEl: '#project-ctrl-next',
+        prevEl: '#project-ctrl-prev',
     },
 });
 $('.tab-link').click(function () {

@@ -11,35 +11,35 @@
     </head>
     <body>
         <!-- navigation -->
-        <nav>
+        <nav id="navbar">
             <a href="#" id="logo"><img src="assets/images/logo.png" alt="" /></a>
             <ul class="nav">
                 <li class="nav__item">
-                    About Us <i class="fas fa-angle-down"></i>
+                    <a href="#about-us"> About Us <i class="fas fa-angle-down"></i> </a>
                     <ul class="nav--sub">
                         <li class=""><a href="#about-us">Who we are</a></li>
                         <li class=""><a href="#why-us">Why us</a></li>
                     </ul>
                 </li>
                 <li class="nav__item">
-                    Portfolio <i class="fas fa-angle-down"></i>
+                    <a href="#portfolio"> Portfolio <i class="fas fa-angle-down"></i> </a>
                     <ul class="nav--sub">
                         <li class="">
                             <a href="#services">What we approach</a>
                         </li>
                         <li class="">Advisors</li>
-                        <li class="">Partners & Investors</li>
+                        <li class=""><a href="#partner">Partners & Investors</a></li>
                     </ul>
                 </li>
                 <li class="nav__item">
-                    Team <i class="fas fa-angle-down"></i>
+                    <a href="#core-team"> Team <i class="fas fa-angle-down"></i> </a>
                     <ul class="nav--sub">
-                        <li class="">Coreteam</li>
-                        <li class="">Our project</li>
+                        <li class=""><a href="#core-team">Core Team</a></li>
+                        <li class=""><a href="#our-project">Our project</a></li>
                     </ul>
                 </li>
-                <li class="nav__item">Start-up Program</li>
-                <li class="nav__item">Contact</li>
+                <li class="nav__item"><a href="#SUP">Start-up Program</a></li>
+                <li class="nav__item"><a href="#contact-us">Contact</a></li>
             </ul>
         </nav>
         <!-- end navigation -->
@@ -69,7 +69,7 @@
             </div>
 
             <!-- statistic -->
-            <section id="statistic">
+            <div id="statistic">
                 <div class="statistic">
                     <div class="stats">
                         <span class="number">100+</span><span class="title">Portfolio Projects</span>
@@ -80,7 +80,7 @@
                         <span class="number">20+</span><span class="title">Network of Nations</span>
                     </div>
                 </div>
-            </section>
+            </div>
             <!-- end statistic -->
 
             <!-- why us -->
@@ -340,72 +340,78 @@
             </div>
             <section id="our-project">
                 <span class="heading--sub">Our Project</span>
-                <div class="swiper project-swiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide project">
-                            <div class="project__cover">
-                                <img src="assets/images/partners/white-logo-cc.webp" alt="" />
+                <span class="heading--desc"> Lorem ipsum dolor sit amet consectetur adipisicing elit. </span>
+                <div class="sliders">
+                    <span class="slide-control ctrl-prev" id="project-ctrl-prev">
+                        <i class="fas fa-chevron-left"></i>
+                    </span>
+                    <div class="swiper project-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide project">
+                                <div class="project__cover">
+                                    <img src="assets/images/partners/white-logo-cc.webp" alt="" />
+                                </div>
+                                <div class="project__content">
+                                    <span class="project__name">CocaCola</span>
+                                    <p class="project__desc">
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem odio corrupti
+                                        accusamus
+                                    </p>
+                                </div>
                             </div>
-                            <div class="project__content">
-                                <span class="project__name">CocaCola</span>
-                                <p class="project__desc">
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem odio corrupti
-                                    accusamus voluptatem ipsum voluptate!
-                                </p>
+                            <div class="swiper-slide project">
+                                <div class="project__cover">
+                                    <img src="assets/images/partners/white-logo-jd.webp" alt="" />
+                                </div>
+                                <div class="project__content">
+                                    <span class="project__name">Jack Daniel's</span>
+                                    <p class="project__desc">
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem odio corrupti
+                                        accusamus voluptatem
+                                    </p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="swiper-slide project">
-                            <div class="project__cover">
-                                <img src="assets/images/partners/white-logo-jd.webp" alt="" />
+                            <div class="swiper-slide project">
+                                <div class="project__cover">
+                                    <img src="assets/images/partners/white-logo-spotify.webp" alt="" />
+                                </div>
+                                <div class="project__content">
+                                    <span class="project__name">Spotify</span>
+                                    <p class="project__desc">
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem odio corrupti
+                                        accusamus
+                                    </p>
+                                </div>
                             </div>
-                            <div class="project__content">
-                                <span class="project__name">Jack Daniel's</span>
-                                <p class="project__desc">
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem odio corrupti
-                                    accusamus voluptatem ipsum voluptate!
-                                </p>
+                            <div class="swiper-slide project">
+                                <div class="project__cover">
+                                    <img src="assets/images/partners/white-logo-wp.webp" alt="" />
+                                </div>
+                                <div class="project__content">
+                                    <span class="project__name">Wordpress</span>
+                                    <p class="project__desc">
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem odio corrupti
+                                        accusamus
+                                    </p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="swiper-slide project">
-                            <div class="project__cover">
-                                <img src="assets/images/partners/white-logo-spotify.webp" alt="" />
-                            </div>
-                            <div class="project__content">
-                                <span class="project__name">Spotify</span>
-                                <p class="project__desc">
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem odio corrupti
-                                    accusamus voluptatem ipsum voluptate!
-                                </p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide project">
-                            <div class="project__cover">
-                                <img src="assets/images/partners/white-logo-wp.webp" alt="" />
-                            </div>
-                            <div class="project__content">
-                                <span class="project__name">Wordpress</span>
-                                <p class="project__desc">
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem odio corrupti
-                                    accusamus voluptatem ipsum voluptate!
-                                </p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide project">
-                            <div class="project__cover">
-                                <img src="assets/images/partners/white-logo-yt.webp" alt="" />
-                            </div>
-                            <div class="project__content">
-                                <span class="project__name">Youtube</span>
-                                <p class="project__desc">
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem odio corrupti
-                                    accusamus voluptatem ipsum voluptate!
-                                </p>
+                            <div class="swiper-slide project">
+                                <div class="project__cover">
+                                    <img src="assets/images/partners/white-logo-yt.webp" alt="" />
+                                </div>
+                                <div class="project__content">
+                                    <span class="project__name">Youtube</span>
+                                    <p class="project__desc">
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem odio corrupti
+                                        accusamus voluptatem ipsum voluptate!
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
-
-                    <!-- If we need pagination -->
-                    <div class="swiper-pagination"></div>
+                    <span class="slide-control ctrl-next" id="project-ctrl-next">
+                        <i class="fas fa-chevron-right"></i>
+                    </span>
                 </div>
             </section>
         </section>
@@ -558,6 +564,7 @@
             </div>
             <section id="mentor">
                 <span class="heading--sub">Our Mentors</span>
+                <span class="heading--desc"> Lorem ipsum dolor sit amet consectetur adipisicing elit. </span>
                 <div class="mentors">
                     <div class="mentor">
                         <img class="mentor__cover" src="assets/images/mentor/viet-nguyen.JPG" alt="" />
@@ -654,32 +661,39 @@
 
         <!-- contact us -->
         <section id="contact-us">
-            <span class="heading">Contact Us</span>
-            <p class="heading--sub">Grow your network now!</p>
-            <form action="">
-                <div class="form__info">
-                    <div class="form-group">
-                        <label for="contact__name"><i class="fa-solid fa-user"></i> Name</label>
-                        <input type="text" name="contact[name]" id="contact__name" placeholder="Example: Tony Stark" />
+            <div class="contact-form">
+                <span class="heading">Contact Us</span>
+                <p class="heading--sub">Grow your network now!</p>
+                <form action="">
+                    <div class="form__info">
+                        <div class="form-group">
+                            <label for="contact__name"><i class="fa-solid fa-user"></i> Name</label>
+                            <input
+                                type="text"
+                                name="contact[name]"
+                                id="contact__name"
+                                placeholder="Example: Tony Stark"
+                            />
+                        </div>
+                        <div class="form-group">
+                            <label for="contact__email"><i class="fa-solid fa-envelope"></i> Email</label>
+                            <input
+                                type="text"
+                                name="contact[email]"
+                                id="contact__email"
+                                placeholder="Example: tonystark@example.com"
+                            />
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <label for="contact__email"><i class="fa-solid fa-envelope"></i> Email</label>
-                        <input
-                            type="text"
-                            name="contact[email]"
-                            id="contact__email"
-                            placeholder="Example: tonystark@example.com"
-                        />
+                    <div class="form-group form__message">
+                        <label for="contact__message"><i class="fa-solid fa-comment"></i> Message</label>
+                        <textarea name="contact[message]" id="contact__message" placeholder="How are you?"></textarea>
                     </div>
+                </form>
+                <div class="submit">
+                    <div class="heading-desc">All fields are required</div>
+                    <button type="submit"><i class="fa-solid fa-share"></i> Send message</button>
                 </div>
-                <div class="form-group form__message">
-                    <label for="contact__message"><i class="fa-solid fa-comment"></i> Message</label>
-                    <textarea name="contact[message]" id="contact__message" placeholder="How are you?"></textarea>
-                </div>
-            </form>
-            <div class="submit">
-                <div class="heading-desc">All fields are required</div>
-                <button type="submit"><i class="fa-solid fa-share"></i> Send message</button>
             </div>
         </section>
         <!-- end contact us -->
@@ -692,11 +706,11 @@
             <div class="footer__panel">
                 <div class="menu">
                     <ul>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">Team</a></li>
-                        <li><a href="#">Start-up Program</a></li>
+                        <li><a href="#about-us">About Us</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#core-team">Team</a></li>
+                        <li><a href="#SUP">Start-up Program</a></li>
+                        <li><a href="#contact-us">Contact</a></li>
                     </ul>
                 </div>
                 <div class="contact">
