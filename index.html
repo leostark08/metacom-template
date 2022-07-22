@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge" /> -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Metacom</title>
         <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
@@ -13,6 +13,12 @@
         <!-- navigation -->
         <nav id="navbar">
             <a href="#" id="logo"><img src="assets/images/logo.png" alt="" /></a>
+            <input type="checkbox" id="toggle" class="input-toggler" />
+            <label for="toggle" class="menu-toggler">
+                <span class="menu-toggler-line"></span>
+                <span class="menu-toggler-line"></span>
+                <span class="menu-toggler-line"></span>
+            </label>
             <ul class="nav">
                 <li class="nav__item">
                     <a href="#about-us"> About Us <i class="fas fa-angle-down"></i> </a>
@@ -44,7 +50,6 @@
         </nav>
         <!-- end navigation -->
 
-        <img class="decor-galaxy" src="assets/images/stars.png" alt="" />
         <!-- about us -->
         <section id="about-us">
             <div class="about-us">
@@ -64,10 +69,11 @@
                     </span>
                 </div>
                 <div class="cover">
-                    <img src="assets/images/bitcoin.webp" alt="About Us" />
+                    <img src="assets/images/cover.png" alt="About Us" />
                 </div>
             </div>
 
+            <img class="decor-galaxy" src="assets/images/stars.png" alt="" />
             <!-- statistic -->
             <div id="statistic">
                 <div class="statistic">
@@ -562,6 +568,8 @@
                     </div>
                 </div>
             </div>
+
+            <img class="decor-galaxy" src="assets/images/techline.png" alt="" />
             <section id="mentor">
                 <span class="heading--sub">Our Mentors</span>
                 <span class="heading--desc"> Lorem ipsum dolor sit amet consectetur adipisicing elit. </span>
