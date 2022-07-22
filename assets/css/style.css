@@ -1,10 +1,12 @@
 @import 'normalize.css';
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600;700;800&display=swap');
 :root {
-    --primaryColor: #31295b;
-    --secondColor: #473f77;
-    --primary-linear-gradient: linear-gradient(to right, #83e4de, #ae94c6);
+    --primaryColor: #285dad;
+    --secondColor: #5698fc;
+    --primary-linear-gradient: linear-gradient(to right, #3f5efb, #fd55d3);
     --max-width: 1140px;
+    --blue: #3f5efb;
+    --pink: #fc466b;
 }
 
 * {
@@ -16,7 +18,6 @@
 html {
     font-size: 62.5%;
     scroll-behavior: smooth;
-    overflow: auto;
 }
 
 body {
@@ -27,7 +28,6 @@ body {
     background-color: var(--primaryColor);
     color: white;
     position: relative;
-    overflow: auto;
 }
 .column {
     display: flex;
@@ -40,14 +40,20 @@ img {
     max-width: 100%;
 }
 
-nav {
+.ultra {
+    background-color: var(--primaryColor);
     position: sticky;
+    top: 0;
+    display: flex;
+    width: 100%;
+    z-index: 9998;
+}
+nav {
     max-width: 1140px;
     margin: 0 auto;
     display: flex;
     max-height: 10rem;
     padding: 1rem 0;
-    top: 0;
     background-color: var(--primaryColor);
     z-index: 9998;
     transition: 0.1s;
@@ -159,6 +165,11 @@ nav a {
 section {
     max-width: 1140px;
     margin: 0 auto;
+}
+.main-section {
+    padding-top: 10rem;
+}
+.main-section section {
     padding-top: 10rem;
 }
 
@@ -214,7 +225,7 @@ section {
     justify-content: center;
     z-index: -100;
     margin-top: -10rem;
-    opacity: 0.2;
+    opacity: 0.1;
 }
 
 .heading {
@@ -250,7 +261,7 @@ section {
     right: -0.2rem;
     bottom: -0.2rem;
     left: -0.2rem;
-    background: linear-gradient(175deg, #00ccff, var(--primaryColor), #d400d4);
+    background: linear-gradient(175deg, #fff, var(--primaryColor), #d400d4);
     z-index: -1;
 }
 #statistic::after {
@@ -261,7 +272,7 @@ section {
     right: -0.2rem;
     bottom: -0.2rem;
     left: -0.2rem;
-    background: linear-gradient(175deg, #00ccff, var(--primaryColor), #d400d4);
+    background: linear-gradient(175deg, #fff, var(--primaryColor), #d400d4);
     z-index: -1;
     filter: blur(3rem);
 }
@@ -269,7 +280,7 @@ section {
     background-color: var(--primaryColor);
     width: 100%;
     height: 100%;
-    opacity: 0.9;
+    opacity: 0.8;
     display: flex;
     justify-content: space-between;
     min-height: 15rem;
@@ -291,11 +302,11 @@ section {
     font-weight: 600;
 }
 /* end statistic */
+
 .description {
     font-size: 2.5rem;
     font-weight: 500;
     text-align: center;
-    margin-top: 3rem;
 }
 .services {
     display: flex;
@@ -310,7 +321,7 @@ section {
 }
 .service {
     width: 50%;
-    aspect-ratio: 16/11;
+    aspect-ratio: 16/9;
     margin-bottom: 3rem;
 }
 .service .desc__sub {
@@ -434,13 +445,14 @@ section {
 
 .partner-swiper {
     margin-top: 5rem;
+    padding: 2rem 0;
 }
 .partner-swiper .swiper-slide {
-    opacity: 0.7;
+    opacity: 1;
     transition: all 0.3s;
 }
 .partner-swiper .swiper-slide:hover {
-    opacity: 1;
+    transform: scale(1.2);
 }
 .members {
     display: flex;
@@ -465,7 +477,7 @@ section {
     height: 100%;
     background-color: var(--primaryColor);
     position: relative;
-    padding: calc(15% + 1.5rem) 1.5rem 1.5rem 1.5rem;
+    padding: calc(15%) 1.5rem 1.5rem 1.5rem;
 }
 .member__avatar {
     width: 30%;
@@ -483,6 +495,24 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 100%;
+}
+.member__info .profile-link {
+    color: white;
+    flex-grow: 1;
+    display: flex;
+    align-items: flex-end;
+    text-decoration: none;
+    font-size: 3rem;
+    transition: 0.3s;
+}
+.member__info .profile-link:hover {
+    color: #00acee;
+    flex-grow: 1;
+    display: flex;
+    align-items: flex-end;
+    text-decoration: none;
+    font-size: 3rem;
 }
 .member__content .name {
     font-weight: 600;
@@ -497,7 +527,6 @@ section {
     font-size: 2rem;
     font-style: italic;
     text-align: center;
-    margin-top: 2rem;
 }
 #our-project .sliders {
     display: flex;
@@ -632,7 +661,7 @@ section {
     width: 100%;
     position: absolute;
     z-index: -1;
-    opacity: 0.5;
+    opacity: 0.3;
     max-width: var(--max-width);
     left: 50%;
     transform: translateX(-50%);
@@ -799,7 +828,7 @@ section {
 
 /* tabs */
 #SUP .start-up-cover {
-    height: 30rem;
+    height: 15rem;
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -867,6 +896,15 @@ section {
 .tab-content .subs li {
     font-size: 2rem;
 }
+
+/*  */
+.super-container {
+    max-width: unset;
+    background-color: white;
+    color: var(--primaryColor);
+    padding: 10rem 0;
+}
+/*  */
 @keyframes fadeIn {
     100% {
         opacity: 1;
@@ -954,14 +992,18 @@ section {
 }
 
 @media screen and (max-width: 1140px) {
-    section,
+    .main-section,
     footer {
-        padding: 10rem 2rem 0 2rem;
+        padding: 5rem 2rem 0 2rem;
+    }
+    nav {
+        padding: 1rem 2rem;
     }
 }
 @media screen and (max-width: 1023px) {
     #logo {
         width: 30%;
+        margin-right: 2rem;
     }
     .about-us {
         flex-wrap: wrap-reverse;
@@ -973,7 +1015,7 @@ section {
         width: 100%;
     }
     #statistic {
-        margin: 10rem 0;
+        margin: 5rem 0;
     }
     .service {
         width: 100%;
@@ -981,7 +1023,7 @@ section {
         padding: unset !important;
     }
     .member__border {
-        width: 80%;
+        width: 100%;
         aspect-ratio: unset;
         margin: 12.5rem 0 0 0 !important;
     }
@@ -1002,15 +1044,20 @@ section {
     .mentor:nth-child(even) {
         margin-left: 2rem;
     }
-    .mentor__info {
-        height: 100%;
-        background: linear-gradient(to top, var(--secondColor), transparent);
-    }
     .footer__panel {
         margin-top: 5rem;
     }
+
+    #footer .footer__logo {
+        margin: 0 auto;
+        padding-right: 0;
+    }
 }
 @media screen and (max-width: 767px) {
+    html,
+    body {
+        overflow: auto;
+    }
     .menu-toggler {
         display: flex;
     }
@@ -1032,10 +1079,15 @@ section {
         top: 7rem;
         transition: 0.5s;
         width: 100%;
+        height: 100vh;
+        justify-content: flex-start;
         overflow: hidden;
     }
     #logo {
         width: unset;
+    }
+    #about-us {
+        padding-top: 7rem !important;
     }
     .statistic {
         flex-wrap: wrap;
@@ -1062,10 +1114,10 @@ section {
         padding: 2rem 0;
     }
     .stats .number {
-        font-size: 5rem;
+        font-size: 3.5rem;
     }
     .stats .title {
-        font-size: 1.8rem;
+        font-size: unset;
     }
     .mentor {
         width: 80%;
@@ -1084,7 +1136,6 @@ section {
         flex-direction: column;
     }
     #footer .footer__logo {
-        margin: 0 auto;
         width: 50%;
     }
     #footer {
@@ -1093,11 +1144,70 @@ section {
     #footer .contact,
     #footer .menu {
         width: 100%;
-        margin-top: 5rem;
+        margin-top: 2rem;
     }
     #footer .menu ul {
         width: 100%;
         display: flex;
         justify-content: space-between;
+    }
+    .slogan {
+        font-size: 3rem;
+        text-align: center;
+    }
+    .mission p {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+    .heading--sub,
+    .vision,
+    .description,
+    .mission li {
+        font-size: 1.8rem;
+    }
+    .heading {
+        font-size: 3rem;
+    }
+    .main-section section {
+        padding-top: 5rem;
+    }
+    #pitckdesk {
+        flex-direction: column;
+    }
+    .service__title span {
+        font-size: 2rem;
+    }
+    .heading--desc {
+        font-size: 1.8rem;
+    }
+    .member__content .name {
+        font-size: 2.5rem;
+    }
+    .member__content .quote {
+        font-size: unset;
+    }
+    .member__content .position {
+        font-size: 1.8rem;
+    }
+    .member__border {
+        margin: 8rem 0 0 0 !important;
+    }
+    .contact-form {
+        margin-top: 0;
+    }
+    .submit button {
+        padding: 1rem 1rem;
+    }
+    .submit .heading-desc {
+        font-size: 1.2rem;
+    }
+    .footer__panel {
+        margin-top: 0;
+    }
+    #footer .menu a {
+        font-size: 1.3rem;
+    }
+    .site-copyright {
+        font-size: 1.3rem;
     }
 }
