@@ -16,6 +16,7 @@
 html {
     font-size: 62.5%;
     scroll-behavior: smooth;
+    overflow: auto;
 }
 
 body {
@@ -26,6 +27,7 @@ body {
     background-color: var(--primaryColor);
     color: white;
     position: relative;
+    overflow: auto;
 }
 .column {
     display: flex;
@@ -81,14 +83,13 @@ nav a {
     cursor: pointer;
     padding: 2rem 0;
 }
-.nav--sub {
-    position: absolute;
-    visibility: hidden;
-}
+
 .nav__item:hover > .nav--sub {
     visibility: visible;
 }
 .nav--sub {
+    position: absolute;
+    visibility: hidden;
     width: max-content;
     background-color: var(--secondColor);
     padding: 1.5rem 0;
@@ -122,7 +123,7 @@ nav a {
 }
 .menu-toggler {
     z-index: 100;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -1010,14 +1011,17 @@ section {
     }
 }
 @media screen and (max-width: 767px) {
+    .menu-toggler {
+        display: flex;
+    }
     nav {
         position: fixed;
-        min-height: 10rem;
         justify-content: space-between;
         padding: 1rem 2rem;
         top: 0;
         left: 0;
-        -webkit-backface-visibility: hidden;
+        max-height: 7rem;
+        /* -webkit-backface-visibility: hidden; */
     }
     .nav {
         position: absolute;
@@ -1025,7 +1029,7 @@ section {
         transform: translateX(100%);
         flex-direction: column;
         left: 0;
-        top: 0;
+        top: 7rem;
         transition: 0.5s;
         width: 100%;
         overflow: hidden;
@@ -1036,6 +1040,22 @@ section {
     .statistic {
         flex-wrap: wrap;
         padding: 1.5rem;
+    }
+    .nav .nav__item {
+        width: 100%;
+        padding: 0.5rem 2rem;
+        outline: none;
+    }
+    .nav--sub {
+        position: relative;
+        visibility: visible;
+        background-color: unset;
+        padding: unset;
+        width: 100%;
+        margin: unset;
+    }
+    .nav--sub::after {
+        content: unset;
     }
     .stats {
         width: 50%;

@@ -2,13 +2,13 @@
 //     scrollFunction();
 // };
 
-function scrollFunction() {
-    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-        document.getElementById('navbar').style.maxHeight = '80px';
-    } else {
-        document.getElementById('navbar').style.maxHeight = '150px';
-    }
-}
+// function scrollFunction() {
+//     if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+//         document.getElementById('navbar').style.maxHeight = '80px';
+//     } else {
+//         document.getElementById('navbar').style.maxHeight = '150px';
+//     }
+// }
 
 const partnerSwiper = new Swiper('.partner-swiper', {
     // Optional parameters
