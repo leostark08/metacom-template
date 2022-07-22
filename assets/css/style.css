@@ -898,12 +898,14 @@ section {
 }
 
 /*  */
-.super-container {
+/* .ultra-container {
     max-width: unset;
     background-color: white;
     color: var(--primaryColor);
-    padding: 10rem 0;
 }
+.member__content {
+    background-color: white;
+} */
 /*  */
 @keyframes fadeIn {
     100% {
@@ -994,7 +996,7 @@ section {
 @media screen and (max-width: 1140px) {
     .main-section,
     footer {
-        padding: 5rem 2rem 0 2rem;
+        padding: 7rem 2rem 0 2rem;
     }
     nav {
         padding: 1rem 2rem;
