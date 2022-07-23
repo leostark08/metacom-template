@@ -59,10 +59,10 @@ const projectSwiper = new Swiper('.project-swiper', {
     spaceBetween: 30,
     breakpoints: {
         320: {
-            slidesPerView: 2,
+            slidesPerView: 1,
         },
         768: {
-            slidesPerView: 3,
+            slidesPerView: 2,
         },
         // when window width is >=  1024px
         1024: {
@@ -110,11 +110,41 @@ const newsSwiper = new Swiper('.news-swiper', {
     keyboardControl: true,
     // Navigation arrows
     navigation: {
-        nextEl: '_',
-        prevEl: '_',
+        nextEl: '#news-ctrl-next',
+        prevEl: '#news-ctrl-prev',
     },
     pagination: {
         el: '.news-swiper-pagination',
+        type: 'bullets',
+    },
+});
+const mentorSwiper = new Swiper('.mentor-swiper', {
+    // Optional parameters
+    spaceBetween: 30,
+    // autoplay: { disableOnInteraction: false },
+    breakpoints: {
+        320: {
+            slidesPerView: 1,
+        },
+        768: {
+            slidesPerView: 2,
+        },
+        // when window width is >=  1024px
+        1024: {
+            slidesPerView: 4,
+        },
+    },
+    slidesPerView: 'auto',
+    grabCursor: true,
+    mousewheelControl: true,
+    keyboardControl: true,
+    // Navigation arrows
+    navigation: {
+        nextEl: '#mentor-ctrl-next',
+        prevEl: '#mentor-ctrl-prev',
+    },
+    pagination: {
+        el: '.mentor-swiper-pagination',
         type: 'bullets',
     },
 });
