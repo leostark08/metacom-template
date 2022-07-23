@@ -281,18 +281,17 @@ section {
 .nft-block:nth-child(4) {
     position: absolute;
     left: 70%;
-    top: 25%;
-    width: 25%;
-    animation: dance 4s 0.5s ease-in-out infinite;
+    top: 40%;
+    width: 15%;
+    animation: dance 4s ease-in-out infinite;
     z-index: 1;
 }
 
 .nft-block:nth-child(5) {
     position: absolute;
-    left: 55%;
-    top: 45%;
-    width: 20%;
-    z-index: 2;
+    left: 60%;
+    top: 65%;
+    width: 10%;
     animation: dance 2s ease-in-out infinite;
 }
 .nft-block:nth-child(6) {
@@ -304,17 +303,17 @@ section {
 }
 .nft-block:nth-child(7) {
     position: absolute;
-    left: 20%;
-    top: 35%;
-    width: 20%;
-    animation: dance 2s 1s ease-in-out infinite;
+    left: 40%;
+    top: 30%;
+    width: 10%;
+    animation: dance 3s 1s ease-in-out infinite;
 }
 .nft-block:nth-child(8) {
     position: absolute;
-    left: 85%;
-    top: 5%;
-    width: 30%;
-    animation: dance 3s ease-in-out infinite;
+    left: 80%;
+    top: 25%;
+    width: 20%;
+    animation: dance 2s 1s ease-in-out infinite;
 }
 /* statistic */
 #statistic {
@@ -451,6 +450,12 @@ section {
 
 /* banner pitckdesk */
 #pitckdesk {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+.pitchdeck__content {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1229,6 +1234,13 @@ section {
         bottom: -10rem;
         height: 20rem;
     }
+    .pitchdeck__content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .pitckdesk__image {
+        width: 30%;
+    }
 }
 @media screen and (max-width: 767px) {
     html,
@@ -1395,7 +1407,7 @@ section {
         background: linear-gradient(to top, var(--secondColor), transparent);
     }
     .about-us .cover {
-        width: 80%;
+        width: 100%;
     }
 
     .tab-link {
