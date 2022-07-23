@@ -281,17 +281,18 @@ section {
 .nft-block:nth-child(4) {
     position: absolute;
     left: 70%;
-    top: 40%;
-    width: 15%;
-    animation: dance 4s ease-in-out infinite;
+    top: 25%;
+    width: 25%;
+    animation: dance 4s 0.5s ease-in-out infinite;
     z-index: 1;
 }
 
 .nft-block:nth-child(5) {
     position: absolute;
-    left: 60%;
-    top: 65%;
-    width: 10%;
+    left: 55%;
+    top: 45%;
+    width: 20%;
+    z-index: 2;
     animation: dance 2s ease-in-out infinite;
 }
 .nft-block:nth-child(6) {
@@ -303,16 +304,16 @@ section {
 }
 .nft-block:nth-child(7) {
     position: absolute;
-    left: 40%;
-    top: 30%;
-    width: 10%;
-    animation: dance 1s ease-in-out infinite;
+    left: 20%;
+    top: 35%;
+    width: 20%;
+    animation: dance 2s 1s ease-in-out infinite;
 }
 .nft-block:nth-child(8) {
     position: absolute;
-    left: 80%;
-    top: 25%;
-    width: 20%;
+    left: 85%;
+    top: 5%;
+    width: 30%;
     animation: dance 3s ease-in-out infinite;
 }
 /* statistic */
@@ -1300,7 +1301,7 @@ section {
         background-repeat: no-repeat;
         background-size: 100% auto;
         top: -12rem;
-        height: 15rem;
+        height: 17rem;
     }
     .contact-form form {
         flex-direction: column;
@@ -1394,7 +1395,7 @@ section {
         background: linear-gradient(to top, var(--secondColor), transparent);
     }
     .about-us .cover {
-        width: 100%;
+        width: 80%;
     }
 
     .tab-link {
