@@ -321,7 +321,7 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 5rem 6rem 5rem 6rem;
+    margin: 5rem 6rem 0 6rem;
 }
 #statistic::before {
     content: '';
@@ -1218,7 +1218,14 @@ section {
 #mentor {
     padding-top: 10rem;
 }
-
+.simple #core-team,
+.simple #about-us,
+.simple #why-us {
+    padding-bottom: 0;
+}
+.simple #portfolio {
+    padding-top: 0;
+}
 @media screen and (max-width: 1140px) {
     .main-section {
         padding: 10rem 2rem 0 2rem;
