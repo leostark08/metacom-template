@@ -753,6 +753,7 @@ section {
     width: 100%;
     position: absolute;
     z-index: -2;
+    z-index: -5;
     opacity: 0.3;
     max-width: var(--max-width);
     left: 50%;
