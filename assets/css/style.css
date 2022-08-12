@@ -729,6 +729,12 @@ section {
     align-self: flex-end;
     width: max-content;
     transition: 0.3s;
+    float: right;
+}
+.news-swiper-pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
 }
 .seemore:hover {
     background: var(--secondColor);
@@ -746,7 +752,7 @@ section {
 .decor-galaxy {
     width: 100%;
     position: absolute;
-    z-index: -1;
+    z-index: -2;
     opacity: 0.3;
     max-width: var(--max-width);
     left: 50%;
@@ -989,6 +995,7 @@ section {
 }
 
 .news-carousel {
+    margin-top: 5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1092,6 +1099,7 @@ section {
     border-radius: 2rem;
     padding: 3rem;
     color: var(--primaryColor);
+    position: relative;
 }
 .contact-form form {
     display: flex;
@@ -1154,6 +1162,23 @@ section {
 .contact .social {
     margin-bottom: 1.5rem;
 }
+
+.social-contact {
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0rem 2rem;
+    border-bottom-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    background-color: var(--secondColor);
+}
+.social-contact a {
+    font-size: 1.62rem;
+    color: white;
+    padding: 1rem;
+}
+
 /* end contact us */
 .site-copyright {
     max-width: var(--max-width);
@@ -1162,6 +1187,12 @@ section {
     text-align: center;
     justify-content: center;
     padding: 5rem 0;
+}
+
+#partner,
+#contact-us,
+#mentor {
+    padding-top: 10rem;
 }
 
 @media screen and (max-width: 1140px) {
